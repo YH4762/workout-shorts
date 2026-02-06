@@ -36,7 +36,7 @@ if wod_photo:
     if st.button("🔍 AI 와드 분석 시작"):
         with st.spinner("Gemini 2.0 Flash가 사진을 분석 중입니다..."):
             try:
-                model = genai.GenerativeModel('gemini-2.0-flash')
+                model = genai.GenerativeModel('gemini-1.5-flash')
                 prompt = """
                 이 사진에서 크로스핏 와드 내용을 추출해줘. 
                 운동 명칭과 횟수 또는 특이사항을 불필요한 말 없이 깔끔한 리스트 또는 표 형식으로 요약해줘. 
@@ -150,6 +150,7 @@ if 'extracted_wod' in st.session_state:
                 # os.unlink(t_input.name) # 각 클립 처리 시 삭제 완료
         else:
             st.warning("운동 영상 파일을 하나 이상 업로드해주세요!")
+
 
 
 
