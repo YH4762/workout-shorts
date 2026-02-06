@@ -10,7 +10,7 @@ import random # 하이라이트 랜덤 추출용
 st.set_page_config(page_title="영환님의 AI 와드 쇼츠 제작기 (스타워즈 에디션)", layout="wide")
 
 # --- 설정 섹션 (영환님의 API 키를 여기에 입력하세요) ---
-GEMINI_API_KEY = "AIzaSyBLZFT9rUVkK2DumZL_egQi4FUAvQhpJdo" # 영환님의 실제 키로 변경하세요!
+GEMINI_API_KEY = "AIzaSyB6q3vrYCJywH1xtU-8gyOFgNPmNeLrVlk" # 영환님의 실제 키로 변경하세요!
 genai.configure(api_key=GEMINI_API_KEY)
 # --------------------------------------------------
 
@@ -150,4 +150,5 @@ if 'extracted_wod' in st.session_state:
                 # os.unlink(t_input.name) # 각 클립 처리 시 삭제 완료
         else:
             st.warning("운동 영상 파일을 하나 이상 업로드해주세요!")
+
 
