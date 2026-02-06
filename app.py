@@ -15,7 +15,7 @@ if "api_key" in st.secrets:
     GEMINI_API_KEY = st.secrets["api_key"]
 else:
     # 직접 입력 시 여기에 영환님의 API 키를 넣으세요
-    GEMINI_API_KEY = "AIzaSy..." 
+    GEMINI_API_KEY = "AIzaSyBLZFT9rUVkK2DumZL_egQi4FUAvQhpJdo" 
 
 genai.configure(api_key=GEMINI_API_KEY)
 
@@ -129,3 +129,4 @@ if 'extracted_wod' in st.session_state:
                     st.error("처리된 영상이 없습니다.")
         else:
             st.warning("🎥 운동 영상을 업로드해 주세요!")
+
